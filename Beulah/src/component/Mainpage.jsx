@@ -1,9 +1,9 @@
 import React from 'react'
-import Home from './Pages/Home'
+import Home from '../component/Pages/Home.jsx'
 
 const Mainpage = () => {
   return (
-    <div className='w-[80vw] h-[89vh] ml-[20vw] -mt-[693px]'>
+    <div>
         <Home/>
     </div>
   )

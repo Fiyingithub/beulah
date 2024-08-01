@@ -7,6 +7,7 @@ import users from '../assets/users.png'
 import Admin from '../assets/setting (3).png'
 import dropDown from '../assets/down-chevron.png'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 
 
@@ -35,10 +36,10 @@ const sidebar = () => {
         </div><br /><br />
 
         <div className='text-[gray]'>
-          <a href="#"  className='flex text-black items-center gap-4 font-[700] w-[90%] h-[40px] pl-4 bg-[#EBEBEB]'>
+          <Link to='/'  className='flex text-black items-center gap-4 font-[700] w-[90%] h-[40px] pl-4 bg-[#EBEBEB]'>
             <img src={home} alt="home-image" />
             <p className='text-[Avenir]'>Home</p>
-          </a><br />
+          </Link><br />
 
           <div onClick={handleClick}  className='flex cursor-pointer items-center pl-4 gap-4 font-[700] '>
             <img src={folder} alt="home-image" />
@@ -47,15 +48,17 @@ const sidebar = () => {
           </div><br />
 
           <div className={`${openBar}`}>
-            <a href="#"  className='flex items-center pl-14 gap-4 font-[700] '>
+            <Link to='/membership'  className='flex items-center pl-14 gap-4 font-[700] '>
               <p className='text-[Avenir]'>Membership</p>
-            </a><br />
-            <a href="#"  className='flex items-center pl-14 gap-4 font-[700] '>
+            </Link><br />
+
+            <Link to='/about'  className='flex items-center pl-14 gap-4 font-[700] '>
               <p className='text-[Avenir]'>Loan</p>
-            </a><br />
-            <a href="#"  className='flex items-center pl-14 gap-4 font-[700] '>
+            </Link><br />
+
+            <Link  className='flex items-center pl-14 gap-4 font-[700] '>
               <p className='text-[Avenir]'>Early Withdrawal</p>
-            </a><br />
+            </Link><br />
           </div>
 
           <div>

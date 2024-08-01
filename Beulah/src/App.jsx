@@ -1,6 +1,14 @@
 import { useState, useEffect } from 'react'
 import Sidebar from './component/Sidebar';
-import Mainpage from './component/Mainpage';
+import Home from './component/Pages/Home.jsx';
+import Membership from './component/Pages/Membership.jsx';
+import About from './component/Pages/About.jsx';
+import {BrowserRouter,Route, Routes} from 'react-router-dom'
+
+
+
+
+
 
 
 function App() {
@@ -12,8 +20,15 @@ function App() {
 
   return (
     <div>
-      <Sidebar/>
-      <Mainpage/>
+      <BrowserRouter>
+        <Sidebar/>
+        {/* <Mainpage/> */}
+        <Routes>
+          <Route path='/' element={<Home/>} />
+          <Route path='/membership' element={<Membership/>} />
+          <Route path='/about' element={<About/>} />
+        </Routes>
+      </BrowserRouter>
     </div>
   )
 }

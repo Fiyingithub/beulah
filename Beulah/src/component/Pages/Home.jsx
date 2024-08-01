@@ -6,7 +6,7 @@ import arrow from '../../assets/arrow (4).png'
 
 const Home = () => {
   return (
-    <div className='px-10'>
+    <div className='w-[80vw] h-[89vh] ml-[20vw] -mt-[693px] px-10'>
       <h1  className='py-4 leading-[65.57px]  text-[48px] font-[800] font-[Avenir]'>Dashboard</h1>
 
       <div className='flex gap-[36px]'>
