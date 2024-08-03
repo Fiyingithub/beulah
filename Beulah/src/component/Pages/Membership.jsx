@@ -7,11 +7,12 @@ import filter from '../../assets/sort (1).png'
 
 const Membership = () => {
   return (
-    <div className="w-[78vw] h-[75vh] ml-[20vw] -mt-[693px] pl-14 ">
+    <div className="w-[80vw] ml-[20vw] h-[89vh] pt-[90px]">
+        <div className="w-[78vw] h-[75vh] pl-12">
         <h1 className="text-[#222222] font-[Avenir] text-[48px] font-[800]">
           Membership Applications
         </h1>
-        <div className="w-[100%] h-[100%] bg-white mt-2 rounded-md">
+        <div className="w-[99%] h-[100%] bg-white mt-2 rounded-md">
           <div className="flex justify-between pt-6">
             <div className="flex items-center ml-4  w-[175px] h-[37px] border border-none bg-[#EBEBEB] border-black rounded-[5px] pl-2">
               <img className='size-4' src={search} alt="search-image" />
@@ -37,7 +38,7 @@ const Membership = () => {
                 Status
               </th>
             </tr>
-            <tr className=''>
+            <tr className='hover:bg-green-50 cursor-pointer'>
               <td className="py-4 border border-r-0 border-l-0 pl-4">10Secs Ago</td>
               <td className="py-4 text-center pl-8 border border-r-0 border-l-0  ">#abc123</td>
               <td className="py-4 border border-r-0 border-l-0 text-center pl-10">
@@ -50,7 +51,7 @@ const Membership = () => {
                 </div>
               </td>
             </tr>
-            <tr>
+            <tr className='hover:bg-green-50 cursor-pointer'>
               <td className="py-4 border border-r-0 border-l-0  pl-4"> 10Secs Ago</td>
               <td className="py-4 border border-r-0 border-l-0  text-center pl-8">#abc124</td>
               <td className="py-4 border border-r-0 border-l-0 text-center pl-10">
@@ -63,7 +64,7 @@ const Membership = () => {
                 </div>
               </td>
             </tr>
-            <tr>
+            <tr className='hover:bg-green-50 cursor-pointer'>
               <td className="py-4 border border-r-0 border-l-0 pl-4 ">10Secs Ago</td>
               <td className="py-4 border border-r-0 border-l-0    text-center pl-8">#abc125</td>
               <td className="py-4 border border-r-0 border-l-0  text-center pl-10">
@@ -76,7 +77,7 @@ const Membership = () => {
                 </div>
               </td>
             </tr>
-            <tr>
+            <tr className='hover:bg-green-50 cursor-pointer'>
               <td className="py-4 border border-r-0 border-l-0  pl-4 ">10Secs Ago</td>
               <td className="py-4 border border-r-0 border-l-0   text-center pl-8">#abc126</td>
               <td className="py-4 border border-r-0 border-l-0 text-center pl-10">
@@ -89,7 +90,7 @@ const Membership = () => {
                 </div>
               </td>
             </tr>
-            <tr>
+            <tr className='hover:bg-green-50 cursor-pointer'>
               <td className="py-4 border border-r-0 border-l-0  pl-4 ">10Secs Ago</td>
               <td className="py-4 border border-r-0 border-l-0    text-center pl-8">#abc127</td>
               <td className="py-4 border border-r-0 border-l-0  text-center pl-10">
@@ -102,7 +103,7 @@ const Membership = () => {
                 </div>
               </td>
             </tr>
-            <tr>
+            <tr className='hover:bg-green-50 cursor-pointer'>
               <td className="py-4 border border-r-0 border-l-0  pl-4 ">10Secs Ago</td>
               <td className="py-4 border border-r-0 border-l-0    text-center pl-8">#abc128</td>
               <td className="py-4 border border-r-0 border-l-0  text-center pl-10">
@@ -115,7 +116,7 @@ const Membership = () => {
                 </div>
               </td>
             </tr>
-            <tr>
+            <tr className='hover:bg-green-50 cursor-pointer'>
               <td className="py-4 border border-r-0 border-l-0  pl-4 ">10Secs Ago</td>
               <td className="py-4 border border-r-0 border-l-0    text-center pl-8">#abc129</td>
               <td className="py-4 border border-r-0 border-l-0  text-center pl-10">
@@ -131,6 +132,7 @@ const Membership = () => {
           </table>
         </div>
       </div>
+    </div>
   )
 }
 

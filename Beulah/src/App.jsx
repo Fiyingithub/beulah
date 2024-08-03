@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react'
-import Sidebar from './component/Sidebar';
+import Sidebar from './component/Sidenav.jsx';
 import Home from './component/Pages/Home.jsx';
 import Membership from './component/Pages/Membership.jsx';
-import About from './component/Pages/About.jsx';
+import Userpage from './component/Pages/Userpage.jsx';
 import {BrowserRouter,Route, Routes} from 'react-router-dom'
+import Signin from './component/Signin/Signin.jsx';
+
 
 
 
@@ -22,12 +24,13 @@ function App() {
     <div>
       <BrowserRouter>
         <Sidebar/>
-        {/* <Mainpage/> */}
+        
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/membership' element={<Membership/>} />
-          <Route path='/about' element={<About/>} />
+          <Route path='/userpage' element={<Userpage/>} />
         </Routes>
+        {/* <Signin/> */}
       </BrowserRouter>
     </div>
   )
