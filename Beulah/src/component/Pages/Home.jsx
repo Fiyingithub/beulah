@@ -6,11 +6,11 @@ import arrow from '../../assets/arrow (4).png'
 
 const Home = () => {
   return (
-    <div className='w-[80vw] h-[89vh] ml-[20vw] pt-[70px] px-10'>
+    <div className='lg:w-[75vw] xl:w-[76vw] 2xl:w-[80vw] h-[89vh] lg:ml-[25vw] xl:ml-[23vw] 2xl:ml-[20vw] lg:pt-[6vw] 2xl:pt-[70px] lg:pl-6 xl:pl-8 2xl:pl-10 lg:pr-o xl:pr-2 2xl:pr-0'>
       <h1  className='py-4 leading-[65.57px]  text-[48px] font-[800] font-[Avenir]'>Dashboard</h1>
 
-      <div className='flex gap-[36px]'>
-        <div className='w-[835px] h-[466px] rounded-[16px] p-[32px] bg-white'>
+      <div className='flex lg:gap-[20px] xl:gap-[25px] 2xl:gap-[36px]'>
+        <div className='lg:w-[70%] xl:w-[70%] 2xl:w-[865px] h-[466px] rounded-[16px] p-[32px] bg-white'>
           <div className='flex justify-between items-center'>
             <div className='flex items-center gap-4'>
               <div className='w-4 h-10 bg-[#06476D]'></div>
@@ -18,7 +18,7 @@ const Home = () => {
             </div>
             
             <div>
-              <select className='w-[120px] px-2 h-[30px] border-2'>
+              <select className='2xl:w-[120px] px-2 h-[30px] border-2'>
                 <option>Last week</option>
               </select>
             </div>
@@ -62,7 +62,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className='flex items-center ml-12 gap-24'>
+          <div className='flex items-center ml-12 lg:gap-10 xl:gap-24'>
             <p>Aug</p>
             <p>Sep</p>
             <p>Oct</p>
@@ -76,34 +76,34 @@ const Home = () => {
 
 
 
-        <div className=''>
-          <div className='flex gap-10 items-center w-[338px] h-[161px] rounded-[16px] p-[32px] bg-white'>
-           <div className='size-16 rounded-[360px] py-4 px-4 bg-[#EBEBEB]'>
-             <img className='size-8' src={users} alt="user-profile" />
+        <div className='lg:w-[25vw] xl:w-[35%]'>
+          <div className='flex lg:gap-4 xl:gap-6 2xl:gap-10 items-center lg:w-[93%] xl:w-[100%] 2xl:w-[338px] xl:h-[150px] 2xl:h-[161px] rounded-[16px] lg:p-[20px] xl:p-[32px] bg-white'>
+           <div className='lg:size-10 xl:size-10 2xl:size-16 rounded-[360px] lg:py-[7px] xl:py-2 2xl:py-4 lg:px-[5px] xl:px-2 2xl:px-4 bg-[#EBEBEB]'>
+             <img className='lg:size-6 xl:size-6 2xl:size-8' src={users} alt="user-profile" />
            </div>
             <div className=''>
-              <p className='text-lg text-[gray]'>Membership Forms</p>
-              <b className='text-5xl text-[#06476D]'>19</b>
+              <p className='xl:text-[15px] 2xl:text-lg text-[gray]'>Membership Forms</p>
+              <b className='lg:text-3xl xl:text-4xl 2xl:text-5xl text-[#06476D]'>19</b>
             </div>
             
           </div>
-          <div className='flex gap-10 mt-[36px] items-center w-[338px] h-[161px] rounded-[16px] p-[32px] bg-white'>
-           <div className='size-16 rounded-[360px] py-4 px-4 bg-[#EBEBEB]'>
-             <img className='size-8' src={increase} alt="user-profile" />
+          <div className='flex lg:gap-4 xl:gap-6 2xl:gap-10 items-center mt-[36px] lg:w-[93%] xl:w-[100%] 2xl:w-[338px] xl:h-[150px] 2xl:h-[161px] rounded-[16px] lg:p-[20px] xl:p-[32px] bg-white'>
+           <div className='lg:size-10 xl:size-10 2xl:size-16 rounded-[360px] lg:py-[7px] xl:py-2 2xl:py-4 lg:px-[7px] xl:px-2 2xl:px-4 bg-[#EBEBEB]'>
+             <img className='lg:size-6 xl:size-6 2xl:size-8' src={increase} alt="user-profile" />
            </div>
             <div className=''>
-              <p className='text-lg text-[gray]'>Loan Application</p>
-              <b className='text-5xl text-[#06476D]'>2</b>
+              <p className='xl:text-[15px] 2xl:text-lg text-[gray]'>Loan Application</p>
+              <b className='lg:text-3xl xl:text-4xl 2xl:text-5xl text-[#06476D]'>2</b>
             </div>
             
           </div>
-          <div className='flex gap-10 mt-[36px] items-center w-[338px] h-[161px] rounded-[16px] p-[32px] bg-white'>
-           <div className='size-16 rounded-[360px] py-4 px-4 bg-[#EBEBEB]'>
-             <img className='size-8' src={fileFolder} alt="user-profile" />
+          <div className='flex lg:gap-4 xl:gap-6 2xl:gap-10 items-center mt-[36px] lg:w-[93%] xl:w-[100%] 2xl:w-[338px] xl:h-[150px] 2xl:h-[161px] rounded-[16px] lg:p-[20px] xl:p-[32px] bg-white'>
+           <div className='lg:size-10 xl:size-10 2xl:size-16 rounded-[360px] lg:py-[7px] xl:py-2 2xl:py-4 lg:px-[7px] xl:px-2 2xl:px-4 bg-[#EBEBEB]'>
+             <img className='lg:size-6 xl:size-6 2xl:size-8' src={fileFolder} alt="user-profile" />
            </div>
             <div className=''>
-              <p className='text-lg text-[gray]'>Early Withdrawal</p>
-              <b className='text-5xl text-[#06476D]'>23</b>
+              <p className='xl:text-[16px] 2xl:text-lg text-[gray]'>Early Withdrawal</p>
+              <b className='lg:text-3xl xl:text-4xl 2xl:text-5xl text-[#06476D]'>23</b>
             </div>
             
           </div>
